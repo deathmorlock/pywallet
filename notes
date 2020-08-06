@@ -1,0 +1,14 @@
+Change Line #2111 from:
+Code:
+				d.update(parse_BlockLocator(vds))
+to:
+Code:
+				#d.update(parse_BlockLocator(vds))
+
+
+Then on Line #2502, change:
+Code:
+			json_db['bestblock'] = d['hashes'][0][::-1].encode('hex_codec')
+to:
+Code:
+			print("ignored") #json_db['bestblock'] = d['hashes'][0][::-1].encode('hex_codec')
